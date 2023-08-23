@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+.wrapper {
+    width: 100%;
+    
+}
+
+.container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
+ 
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+    width: 350px;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+    width: 350px;
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0px;
+    width: 350px;
+}
+
+.image {
+    padding: 2rem;
+}
+
+.header {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-left: 2rem;
+    color: hsl(0, 0%, 95%);
+}
+
+.text {
+    margin-top: 2rem;
+    padding: 3rem;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-left: -20px;
+}
+
+button {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 2rem;
+    padding: 20px 40px;
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 75px;
+    background-color: hsl(0, 0%, 95%);
+    font-weight: 800;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+}
+
+.sedan-button {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedan-button:active {
+    border: 1px solid white;
+    color: white;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suv-button {
+    color: hsl(184, 100%, 22%);
+}
+
+.suv-button:active {
+    border: 1px solid white;
+    color: white;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-button {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury-button:active {
+    border: 1px solid white;
+    color: white;
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 376px) {
+    .container {
+        margin-top: 10px;
+        flex-direction: column;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .header {
+        font-size: 50px;
+
+    }
+
+    .text {
+        margin-top: 0;
+    }
+
+    button {
+        margin-top: 0;
+    }
+
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+}
